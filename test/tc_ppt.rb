@@ -20,6 +20,11 @@ class PPTTest < Test::Unit::TestCase
     get"/?choice='rock'"
     assert last_response.body.include?("Resultado")
   end
+  
+  def test_status
+          get "/test-url", {}, {"HTTP_IF_NONE_MATCH" => '"15-xyz"'}
+          last_response.status == 200
+  end
 
 
   def test_index
