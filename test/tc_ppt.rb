@@ -12,6 +12,11 @@ class PPTTest < Test::Unit::TestCase
     end.to_app
   end
    
+  def choice_computer
+          computer_throw = 'paper'
+  end
+
+   
   def test_index
     get "/"
     assert last_response.ok?
