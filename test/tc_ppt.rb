@@ -16,7 +16,12 @@ class PPTTest < Test::Unit::TestCase
           computer_throw = 'paper'
   end
 
-   
+  def test_win
+    get"/?choice='rock'"
+    # assert last_response.body.include?("chuchu")
+  end
+
+
   def test_index
     get "/"
     assert last_response.ok?
