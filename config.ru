@@ -7,7 +7,7 @@ require './lib/rsack/ppt.rb'
   use Rack::Lint
   use Rack::Session::Cookie, 
 	  :key => 'rack.session', 
-	  :domain => 'example.com',
+	  :domain => 'young-reef-5332.herokuapp.com',
 	  :secret => 'some_secret'
   use Rack::Static, :urls => ['/public']
 
