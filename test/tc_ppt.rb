@@ -18,7 +18,7 @@ class PPTTest < Test::Unit::TestCase
 
   def test_win
     get"/?choice='rock'"
-    assert last_response.body.include?("chuchu")
+    assert last_response.body.include?("Resultado")
   end
 
 
